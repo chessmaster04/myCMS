@@ -1,0 +1,23 @@
+{
+	"bootstrap":{
+		"0":"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css",
+		"1":"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+	},
+	"font-awesome":{
+		"0":"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+	},
+	"animation-awesome":{
+		"0":"awesome.min.css"
+	},
+	"jquery":{
+		"0":"https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+	},
+	"angularjs":{
+		"0":"https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"
+	},
+	"highlightjs":{
+		"0":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css",
+		"1":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"
+	}
+	
+}

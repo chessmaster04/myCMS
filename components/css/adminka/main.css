@@ -1,0 +1,124 @@
+body{
+	#background:#333 !important;
+}
+.row{
+	#height:300px;
+}
+/**{
+	margin:0px;
+	padding:0px;
+	#outline:1px solid black;
+	color:black;
+	font-family:Arial;
+}
+html,body{
+	height:100%;
+	width:100%;
+}
+body{
+	background:#A0C7F0;
+}
+#wrapper{
+	margin:0px auto;
+	padding-top:100px;
+	max-width:500px;
+	max-height:600px;
+}
+h2{
+	font-family:Impact;
+	text-align:center;
+	text-shadow:1px 1px 1px white;
+	color:#333;
+}
+form.formCheckInAndLogIn{
+	width:240px;
+	margin:50px auto;
+}
+	form.formCheckInAndLogIn .inputText1{
+		height:30px;
+		width:200px;
+		text-align:center;
+		padding:10px;
+		box-sizing:border-box;
+		border:0px;
+		margin-left:10px;
+		float:right;
+	}
+	.capcha{
+		float:right;
+	}
+	form.formCheckInAndLogIn .inputText2{
+		height:30px;
+		width:44px;
+		text-align:center;
+		padding:4px;
+		box-sizing:border-box;
+		border:0px;	
+		text-transform:uppercase;		
+	}
+	form.formCheckInAndLogIn .inputText2:first-child{
+		margin-left:10px;
+	}
+	form.formCheckInAndLogIn label{
+		width:240px;
+		height:31px;
+		line-height:30px;
+		background:#eee;
+		padding-left:10px;
+		font-size:12px;
+		display:block;
+		font-family:Impact;
+		text-shadow:1px 1px 0px white;
+		text-transform:uppercase;
+	}
+	form.formCheckInAndLogIn label span{
+		background:white;
+		padding-top:7px;
+		padding-bottom:9px;
+	}
+	form.formCheckInAndLogIn input[type="submit"]{
+		width:250px;
+		height:30px;
+		background:#eee;
+		font-family:Verdana;
+		text-shadow:1px 1px 0px white;
+		border:0px;
+		color:#333;
+		font-size:14px;
+	}
+//Таблица
+#wrapperInterface{
+	min-width:600px;
+	width:100%;
+	min-width:600px;
+	padding:10px;
+	box-sizing:border-box;
+}
+#tableFiles{
+	width:100%;
+	margin-top:20px;
+}
+#tableFiles td,#tableFiles tr{
+	border:1px solid black;
+}
+#tableFiles tr:nth-child(odd){
+	background:#ddd;
+}
+#tableFiles tr:nth-child(odd):hover,#tableFiles tr:nth-child(even):hover{
+	background:#fff;
+}
+#tableFiles tr:nth-child(even){
+	background:#eee;
+}
+#tableFiles tr:first-child, #tableFiles tr td:first-child{
+	background:#ccc !important;
+}
+.td_number,.td_nameSite,.td_nameFile,.td_functions{
+	text-align:center;
+}
+.td_functionDelete{
+	
+}
+.td_functionModify{
+	
+}

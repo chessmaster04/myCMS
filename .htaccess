@@ -1,0 +1,16 @@
+DirectoryIndex Index.class.php
+AddDefaultCharset UTF-8
+
+	#чтобы запросы к несуществующим страницам и папкам автоматически перенаправлялись в корень сайта index.php
+RewriteEngine on
+RewriteBase /
+
+	#если запрашиваемый файл не существует, то есть являеться ни дерикторией ни файлом
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+	#то делаем переадрисацию на главную страницу
+	RewriteRule ^(.*) ./?%{QUERY_STRING}
+	
+	#редирект домена с WWW на домен без WWW
+RewriteCond %{HTTP_HOST} ^www.pattern.engine$ [NC]
+	RewriteRule ^(.*)$ http://pattern.engine/$1 [R=301,L]

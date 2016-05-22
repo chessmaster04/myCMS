@@ -1,0 +1,107 @@
+- папка application (core)
+	- папка core
+		- файл .htaccess
+		- папка controllers
+			- файл FrontController.class.php (главный контроллер)
+			- файл Controller.abstract.php (наследуемый контроллер для страниц)
+			- файл .htaccess
+			- папка Pages (содержит контроллеры, обрабатывающие страницы)
+				- ... (контроллеры, обрабатывающие страницы и наследуемые от AbstractController)
+				- папка CSSPathForIncludes (содержит файлы с адресами CSS файлов для каждой страницы)
+					- ... (файлы txt)
+				- папка JSPathForIncludes (содержит файлы с адресами JS файлов для каждой страницы)
+					- ... (файлы txt)
+		- папка models
+			- папка Accounts
+				- файл AdminAccountManager.class.php
+			- папка FileManager
+				- файл FileManager.class.php
+				- файл FileRender.class.php
+				- файл FileTypes.interface.php
+				- файл JSONParser.class.php
+			- папка Messenger
+				- файл Messenger.class.php
+				- папка Exceptions
+					- файл .htaccess
+					- файл AbstractException.class.php
+					- файл ClassNotFoundException.class.php
+					- файл DBException.class.php
+					- файл FileNotFoundException.class.php
+					- файл IllegalArgumentException.class.php
+					- файл InterfaceException.interface.php
+					- файл MethodNotFoundException.class.php
+					- файл SettingNotFoundException.class.php
+			- папка Registry
+				- файл Registry.class.php
+				- файл URLRegistry.class.php
+			- папка Router
+				- файл Router.class.php
+				- файл URLManager.class.php
+			- файл MySet.class.php (моё множество)
+			- файл Coder.class.php (шифровальщик строковых данных)
+			- файл .htaccess
+	- папка views (templates) (тут содержатся страницы)
+		- папка controllpanel
+			- ...
+		- папка pages
+			- ...
+		- файл index.php
+	- папка plugins
+		- файл .htaccess
+		- файл DBModel.class.php
+		- файл CheckData.class.php
+		- файл ParserSimpleXML.class.php
+		- папка search
+			- файл Search.class.php
+			- файл PrioritySort.class.php
+			- файл Filter.class.php
+			- файл .htaccess
+	- файл settings.ini
+	- файл .htaccess
+- файл .htaccess
+- файл Index.class.php
+- папка components
+	- папка css
+		- папка adminka
+			- ...
+		- папка awesome
+			- ...
+		- папка bootstrap
+			- ...
+		- ...
+	- папка js
+		- папка adminka
+			- ...
+		- папка ajax
+			- ...
+		- папка jquery
+			- ...
+		- файл validateForm.js
+		- файл myDinamicCSSLib.js
+	- папка img
+		- папка adminka
+			- ...
+
+
+--------РАЗБОР URL АДРЕССА---------
+/page[/item[/...]]?...
+1-й аргумент = страница
+2-й аргумент = раздел внутри страницы, который можно получить с помощью реестра (статического класса для URl-адреса) URLRegistry
+3-й и другие аналогичны 2-му аргументу
+все остальные выдадут страницу ошибку
+--------ИНСТРУКЦИЯ ДЛЯ ОПТИМИЗАЦИИ ПОД ЛЮБОЙ САЙТ------------
+1. в основном файле .htaccess в строке redirect 301 надо прописать адрес сайта
+2. все плагины можно отключать(удалять)
+3. надо настраивать файл settings.ini
+4. что бы добавить страницу, надо:
+	1) создать для неё контроллер ($pageName+"Controller.class.php")
+	2) создать страницу в директории views/pages ($pageName+".php")
+	3) В Директории "application\core\controllers\Pages\data" создать файл ($pageName+".xml"), аналогично другим
+	ИЛИ
+	Воспользоватся админкой
+5. ГДЕ ПИСАТЬ САЙТ?
+	- сайт пишется в папке application\views\
+	- файл Index.class.php трогать не надо
+	- каркас сайта пишется в файле wrapper-... .php, а всё остальное в файлах header-... .php, footer-... .php и тому подобные
+	- можно самому создавать нужные wrapper-... .php и другие файлы, разположенные в директории application\views\parts\
+	- файлы wrapper-... .php должны содержать в своём имени слово wrapper

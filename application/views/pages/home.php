@@ -1,0 +1,4 @@
+Hello!
+<?
+echo $thisController->getTest();
+?>

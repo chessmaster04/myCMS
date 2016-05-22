@@ -1,0 +1,29 @@
+{
+	"jQuery":{
+		"0":"http://code.jquery.com/jquery-1.11.1.min.js"
+	},
+	"jQueryUI":{
+		"0":"http://code.jquery.com/ui/1.11.4/jquery-ui.js",
+		"1":"http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
+	},
+	"jQueryMobile":{
+		"0":"http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css",
+		"1":"http://code.jquery.com/jquery-1.11.1.min.js",
+		"1":"http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"
+	},
+	"bootstrap3":{
+		"0":"http://code.jquery.com/jquery-1.11.1.min.js",
+		"1":"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css",
+		"2":"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+	},
+	"font-awesome":{
+		"0":"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+	},
+	"AwesomeCSS3":{
+		"0":"http://pavlyukpetr.com/awesome/css/awesome.css"
+	},
+	"highlightjs":{
+		"0":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css",
+		"1":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"
+	}
+}
