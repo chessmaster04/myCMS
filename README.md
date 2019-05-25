@@ -8,4 +8,4 @@ Here was mastered:
   - parsing XML, JSON ...
   - REST API
 
-Now I see my  mistakes I made then.
+Now I see my  mistakes I made then. But OOP used in this project, at that time, I think, is beautiful.
